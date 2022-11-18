@@ -35,12 +35,16 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+  display: flexbox;
 }
 
 .nav__link {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
+}
+.nav__link:hover {
+  color: #1f69c9;
 }
 
 /* Add the hover state styles for .nav__link here */
@@ -63,6 +67,9 @@
 .header__image {
   z-index: 1;
   max-width: 636px;
+  position: absolute;
+  right: 20px;
+  top: 135px;
 }
 
 .header__footer {
@@ -80,6 +87,9 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+.header__link:hover {
+  color: #1f69c9;
 }
 
 /* Add the hover state styles for .header__link here */
@@ -111,12 +121,20 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-
+.staff__cards {
+  max-width: 760px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  list-style: none;
+}
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
+  height: 420px;
+  width: 360px;
 }
 
 .card__content {
