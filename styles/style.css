@@ -469,6 +469,8 @@
 
 .footer__column-heading {
   margin-bottom: 16px;
+  color: #f2f2f2;
+  line-height: 16px;
 }
 
 .footer__column-link {
