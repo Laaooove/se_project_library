@@ -1,10 +1,9 @@
 .page {
   max-width: 1600px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 20px;
   min-width: 1100px;
-  margin-right: auto;
   margin-right: auto;
 }
 
@@ -38,7 +37,6 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
-  display: flexbox;
 }
 
 .nav__link {
@@ -125,12 +123,12 @@
 .staff__cards {
   max-width: 760px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
   list-style: none;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 68px auto 0;
+  padding: 0;
 }
 .card {
   background-color: #fff;
@@ -142,8 +140,8 @@
 }
 
 .card__content {
-  width: 360px, 100%;
-  height: 420px, 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -298,8 +296,6 @@
 
 .person__image_size_l {
   width: 140px;
-  top: 30px;
-  left: 319px;
 }
 
 .person__image_size_m {
@@ -311,9 +307,9 @@
 }
 
 .person__caption {
-  /* text-align: center;
+  text-align: center;
   font-size: 14px;
-  margin: 0; */
+  margin: 0;
 }
 
 .membership {
@@ -337,18 +333,14 @@
   margin: 100px 0 0;
   justify-content: center;
   display: flex;
-  gap: 20px;
+  column-gap: 40px;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   /* Add styles */
 }
 
 .step {
   /* Add styles */
-  gap: 40px;
-  max-width: 220px;
-  flex-basis: 220px;
+  flex: 0 0 220px;
 }
 
 .step__title {
@@ -404,8 +396,6 @@
 
 .about__paragraph {
   margin: 0;
-  gap: 32px;
-  display: block;
   z-index: 2;
 }
 
@@ -443,18 +433,14 @@
 
 .footer__column_content_social {
   color: #fff;
-  margin-left: 102px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
 }
 
 .footer__logo {
-  color: #fff;
   height: 21px;
   width: 116px;
-  gap: 16px;
-  top: 0px;
-  right: 80px;
 }
 
 .footer__list {
@@ -469,11 +455,14 @@
   color: #fff;
   margin-bottom: 16px;
 }
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
+}
 
 .footer__column-heading {
   margin-bottom: 16px;
   color: #f2f2f2;
-  line-height: 16px;
+  font-size: 18px;
 }
 
 .footer__column-link {
@@ -489,6 +478,7 @@
 .footer__social-icon {
   color: #838383;
   max-width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
